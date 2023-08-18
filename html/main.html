@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python TUI</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00ff00;
+            color: #000;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #000;
+            color: #00ff00;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        /* Creative Element: Animated Cursor */
+        .creative-cursor {
+            display: inline-block;
+            position: relative;
+            animation: blink 0.6s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Python TUI</h1>
+        <form action="/cgi-bin/cal.py">
+            <button>Checking the Calender</button>
+        </form>
+        <form action="/cgi-bin/date.py">
+            <button>Checking the Date</button>
+        </form>
+        <form action="/useradd.html">
+            <button>Add New User</button>
+        </form>
+        <form action="/usercheck.html">
+            <button>Checking the user</button>
+        </form>
+        <form action="/google.html">
+            <button>Google Search</button>
+        </form>
+        <form action="/software.html">
+            <button>Download any software</button>
+        </form>
+        <form action="/cgi-bin/ip.py">
+            <button>Network card and IP address</button>
+        </form>
+        <form action="/mail.html">
+            <button>Send an email using Google mail</button>
+        </form>
+	<form action="/linux.html">
+            <button>Live Linux Interpreter</button>
+        </form>
+    </div>
+    <!-- Creative Element: Animated Cursor -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let cursor = document.createElement("div");
+            cursor.className = "creative-cursor";
+            cursor.textContent = "▌"; // Custom cursor symbol
+            document.body.appendChild(cursor);
+        });
+    </script>
+</body>
+</html>
