@@ -23,7 +23,7 @@ prompt = formdata.getvalue("message")
 # cmd = "date"
 # output = subprocess.getoutput(cmd)
 # print(output)
-myOpenAPiKey = "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"
+myOpenAPiKey = "YOUR_OPENAI_API_KEY"
 myLLM = OpenAI(
     temperature=0.5,
     max_tokens=1000,
