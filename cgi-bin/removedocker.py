@@ -11,4 +11,7 @@ name=form.getvalue("name")
 
 command = f"sudo docker rm {name} --force"
 output=subprocess.getoutput(command)
+print("<pre><h2>")
+print(output)
 print(f"Docker Container named '{name}' Deleted")
+print("</h2></pre>")

@@ -12,4 +12,7 @@ os_name=form.getvalue("os")
 
 command = f"sudo docker run -dit --name {name} {os_name}"
 output=subprocess.getoutput(command)
+print("<h2>")
+print(output)
 print(f"Docker Container named '{name}' Launched")
+print("</h2>")

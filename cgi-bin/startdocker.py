@@ -11,4 +11,7 @@ name=form.getvalue("name")
 
 command = f"sudo docker start {name}"
 output=subprocess.getoutput(command)
+print("<pre><h2>")
+print(output)
 print(f"Docker Container named '{name}' Started")
+print("</h2></pre>")
