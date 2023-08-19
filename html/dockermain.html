@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python TUI</title>
+    <title>Contsainer Operations</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -70,39 +70,21 @@
 </head>
 <body>
     <div id="container">
-        <h1>Python TUI</h1>
-        <form action="/cgi-bin/cal.py">
-            <button>Checking the Calender</button>
+	    <h1>Container Operations</h1>
+        <form action="/cgi-bin/createdocker">
+            <button>Create container.</button>
         </form>
-        <form action="/cgi-bin/date.py">
-            <button>Checking the Date</button>
+        <form action="/cgi-bin/startdocker">
+            <button>Start container</button>
         </form>
         <form action="/useradd.html">
-            <button>Add New User</button>
+            <button>List container</button>
         </form>
         <form action="/usercheck.html">
-            <button>Checking the user</button>
+            <button>Stop container</button>
         </form>
-        <form action="/google.html">
-            <button>Google Search</button>
-        </form>
-        <form action="/software.html">
-            <button>Download any software</button>
-        </form>
-        <form action="/cgi-bin/ip.py">
-            <button>Network card and IP address</button>
-        </form>
-        <form action="/mail.html">
-            <button>Send an email using Google mail</button>
-        </form>
-	<form action="/linux.html">
-            <button>Live Linux Interpreter</button>
-        </form>
-	<form action="/chatgpt.html">
-            <button>ChatGPT Prompt</button>
-        </form>
-	<form action="/dockermain.html">
-            <button>Container Operations</button>
+        <form action="/folder.html">
+            <button>Remove container</button>
         </form>
     </div>
     <!-- Creative Element: Animated Cursor -->
@@ -116,3 +98,5 @@
     </script>
 </body>
 </html>
+
+
